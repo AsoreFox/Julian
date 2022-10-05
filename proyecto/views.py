@@ -46,8 +46,6 @@ def crear_personas(request, nombre, apellido):
     template = loader.get_template('crear_personas.html')
     template_renderizado = template.render({'personas': personas})
 
-
-
     return HttpResponse(template_renderizado)
 
 def ver_personas(request):
